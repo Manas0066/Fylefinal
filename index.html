@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="app">
+    <div id="first-page" class="page">
+      <div class="border bg-neutral-500"></div>
+      <div class="flex-row">
+        <div class="left-column">
+          <h1 class="award-winning">AWARD WINNING</h1>
+          <h1 class="main-title">DIGITAL MARKETING AGENCY</h1>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor eaque corporis necessitatibus praesentium. Ducimus fugiat a inventore sint atque omnis, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, repudiandae. Minus, itaque magnam repudiandae illum voluptatibur quos voluptas officia ratione.asperiores, ex enim id maiores soluta.</p>
+          <button class="contact-btn" onclick="toggleModal(true)">CONTACT US</button>
+          <div id="form-modal" class="modal" style="display: none;">
+            <button class="close-btn" onclick="toggleModal(false)">Close</button>
+            <h1 class="modal-title">Talk to us</h1>
+
+            <form action="https://getform.io/f/ayvpkdlb" method="POST">
+              <div class="form-group">
+                <label for="email" class="form-label">Work email</label>
+                <input type="email" id="email" name="email" placeholder="Work email*" class="form-input-email" required />
+              </div>
+              
+              <div class="form-group flex">
+                <div class="form-half">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="First name*" class="form-input" required />
+                </div>
+                <div class="form-half">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Last name*" class="form-input" required />
+                </div>
+              </div>
+              <div class="form-group flex items-center">
+                <input type="checkbox" id="agree" name="agree" class="form-checkbox" />
+                <label for="agree" class="form-text">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+
+          </div>
+        </div>
+        <div class="right-column">
+          <img src="./assests/frontpageimg.png" alt="Front Page Image" class="front-image">
+        </div>
+      </div>
+    </div>
+
+    <div id="second-page" class="page">
+      <div class="border bg-neutral-500"></div>
+      <div class="flex-row">
+        <div class="left-column">
+          <h1 class="section-title">WHAT WE DO</h1>
+          <h1 class="main-title">SERVICE PROVIDE FOR YOU</h1>
+        </div>
+        <div class="right-column-second-page">
+          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo maxime itaque magnam obcaecati at tenetur cumque. Quos sequi vitae voluptatibus obcaecati consectetur, dolorem ut aperiam veniam aspernatur minus voluptatem quasi?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sequi porro quos nulla officiis dicta nostrum tenetur aspernatur, excepturi optio at libero velit aliquid quia ratione? Quod quos vel deleniti.</p>
+        </div>
+      </div>
+        <!-- Carousel content here -->
+
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+              <div class="carousel-slide">
+                <img src="./assests/sliderimg1.png" alt="Image 1" class="crousel-images">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assests/sliderimg2.png" alt="Image 2" class="crousel-images">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assests/sliderimg3.png" alt="Image 3" class="crousel-images">
+              </div>
+              <div class="carousel-slide-btn">
+                <h3>WEB DEVELOPMENT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa magnam natus voluptate deleniti numqu.</p>
+                <button class="read-more-btn" onclick="openNewTab('https://www.fylehq.com/')">Read More <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+              <div class="carousel-slide">
+                <img src="./assests/sliderimg2.png" alt="Image 1" class="crousel-images">
+              </div>
+              <div class="carousel-slide">
+                <img src="./assests/sliderimg3.png" alt="Image 2" class="crousel-images">
+              </div>
+            </div>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+
+        
+      
+    </div>
+
+    <div id="third-page" class="page">
+      <div class="border bg-neutral-500"></div>
+      <div class="third-page-title">
+        <h1 class="section-title">OUR PROJECTS</h1>
+        <h1 class="main-title">WHY WE ARE BEST</h1>
+      </div>
+      <div class="project-content">
+        <div class="project-imgdiv">
+        <img src="./assests/thirdpageimg.png" alt="Project Image" class="project-image">
+        </div>
+        <div class="project-info">
+          <div class="project-card">Genderless kei - japan's hot<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cum exercitationem dolorem eaque magni perferendis enim.</p></div>
+          <div class="project-card">Genderless kei - japan's hot<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cum exercitationem dolorem eaque magni perferendis enim.</p></div>
+          <div class="project-card">Genderless kei - japan's hot<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, cum exercitationem dolorem eaque magni perferendis enim.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fourth-page" class="page">
+    <div class="border bg-neutral-500"></div>
+     <div class="fourth-page-title">
+      <h1 class="section-title">EXPERT GROWTH</h1>
+      <h1 class="main-title">OUR COMPANY GROWTH</h1>
+     </div>
+      <div class="growth-stats">
+        <div class="stat-card">
+          <h1 class="stat-icon"><i class="fa fa-heart"></i></h1>
+          <h1 class="stat-number">199+</h1>
+          <h1 class="stat-title">Satisfied customer</h1>
+        </div>
+        <div class="stat-card">
+          <h1 class="stat-icon"><i class="fa fa-clock"></i></h1>
+          <h1 class="stat-number">1591+</h1>
+          <h1 class="stat-title">Day of operation</h1>
+        </div>
+        <div class="stat-card">
+          <h1 class="stat-icon"><i class="fa fa-check"></i></h1>
+          <h1 class="stat-number">283+</h1>
+          <h1 class="stat-title">Completed Projects</h1>
+        </div>
+        <div class="stat-card">
+          <h1 class="stat-icon"><i class="fa fa-trophy"></i></h1>
+          <h1 class="stat-number">75+</h1>
+          <h1 class="stat-title">Awards winner</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
